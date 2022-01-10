@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>JQVMap - World Map</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="../dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="../dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.vmap.sampledata.js"></script>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery('#vmap').vectorMap({
+          map: 'world_en',
+          backgroundColor: '#333333',
+          color: '#ffffff',
+          hoverOpacity: 0.7,
+          selectedColor: '#666666',
+          enableZoom: true,
+          showTooltip: true,
+          scaleColors: ['#C8EEFF', '#006491'],
+          values: {"PW":8,"VU":7,"WS":3,"CN":101486,"TO":1,"MS":45,"MO":78,"ME":163954,"BJ":24935,"ER":7902,"CM":108676,"ZM":234476,"BW":212482,"GL":2306,"CY":152685,"NA":146097,"UG":135091,"GP":56035,"LU":99717,"MV":95032,"JM":92789,"MQ":47300,"SN":74469,"FJ":53023,"MT":47082,"MR":40614,"GA":39910,"MZ":172175,"BZ":31503,"LS":28126,"IS":24340,"SC":24197,"BI":23657,"BS":23539,"MU":23251,"AD":22332,"YT":21506,"CG":20089,"TL":19833,"AW":17896,"GW":6466,"DJ":13593,"GM":10136,"YE":10118,"DM":6520,"BM":6014,"AI":1646,"LI":5940,"NI":17442,"DZ":216930,"NE":7289,"AL":207877,"ZW":205449,"MW":71551,"ML":20120,"MC":4809,"TG":28504,"GD":5961,"TJ":17095,"RW":105989,"BB":27724,"SR":51683,"GN":31130,"HT":25974,"LR":6228,"EE":237099,"KM":5867,"GH":138957,"MG":49590,"SO":23532,"TD":5701,"AO":71752,"SD":46166,"GY":39119,"UZ":198487,"FI":234041,"KG":184552,"KH":120469,"NG":238420,"GI":8220,"AF":157998,"BT":2660,"GR":1084153,"JO":1054892,"MA":956410,"NP":827522,"BG":735998,"TN":723422,"IE":722461,"LB":713670,"HR":693813,"GT":625257,"AZ":614936,"BO":577808,"EC":542341,"MM":529813,"PY":465564,"IT":5678112,"KW":415349,"CU":964857,"NO":378087,"OM":305174,"BH":280109,"SG":278044,"LV":271766,"UY":407981,"ET":400560,"CA":2035831,"ES":5932626,"PA":488341,"FR":9146451,"MX":3951946,"NL":3076442,"TH":2214712,"CL":1801033,"PK":1294031,"SE":1273313,"KZ":986553,"SK":826850,"DK":715133,"JP":1732007,"IN":34799691,"MN":388755,"HN":379276,"BE":2052871,"EG":382194,"PL":4054865,"PE":2281362,"IL":1368012,"VE":443612,"BD":1583626,"DE":7028368,"BY":694226,"UA":3649236,"QA":248435,"BR":22246276,"TR":9333223,"GE":928030,"AU":323278,"AR":5480305,"CO":5127971,"AM":344649,"ID":4261879,"SI":456755,"MY":2743936,"PH":2839111,"IQ":2092650,"HU":1246689,"LT":513830,"RO":1803311,"RS":1291718,"PT":1286119,"KE":284150,"AT":1266103,"CH":1257306,"GU":32},
+          normalizeFunction: 'polynomial'
+
+          
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vmap" style="width: 600px; height: 400px;"></div>
+  </body>
+</html>
