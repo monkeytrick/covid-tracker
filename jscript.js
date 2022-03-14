@@ -91,8 +91,6 @@ function getRegionData(rgnCde) {
         //Get array from regionCodes object based on user selection
         let passValue = regionCodes[rgnCde]
 
-        //Have to use standard for loop as forEach cannot use break statement. 
-        // for in and for as would need elems to be further modified
         countryEle.forEach(elem => {
             for(i=0; i <= passValue.length; i++) {
                 //If elem Id matches array value, set color
